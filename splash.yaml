@@ -1,0 +1,10 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logos/invenger_logo_final.png
+  fill: true
+
+  android_12:
+    color: "#FFFFFF"
+    image: assets/logos/invenger_logo_final.png
+    fill: true
+
