@@ -26,15 +26,15 @@ class ScannerQR extends StatelessWidget {
             debugPrint('Barcode found! ${barcode.rawValue}');
 
             // Navigate to a new page when a barcode is detected
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => BarcodeDetailsScreen(
-                  barcodeValue: barcode.rawValue,
-                  capturedImage: image,
-                ),
-              ),
-            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => BarcodeDetailsScreen(
+            //       barcodeValue: barcode.rawValue,
+            //       capturedImage: image,
+            //     ),
+            //   ),
+            // );
           }
         },
       ),

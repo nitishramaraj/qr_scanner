@@ -4,6 +4,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:qr_scanner/features/screens/login/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qr_scanner/features/screens/scanner/scanner.dart';
+import 'package:qr_scanner/features/screens/notes/notes.dart';
 
 
 class MainMenuScreen extends StatelessWidget {
@@ -35,7 +36,7 @@ class MainMenuScreen extends StatelessWidget {
       // Handle Photo card press
         print("Photo card pressed");
         break;
-      case "QR Code":
+      case "QR/Bar Code":
       // Handle QR Code card press
         Navigator.push(
           context,
@@ -43,8 +44,12 @@ class MainMenuScreen extends StatelessWidget {
         );
         print("QR Code card pressed");
         break;
-      case "Bar Code":
+      case "Quick Note":
       // Handle Bar Code card press
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) =>  const Notes()),
+        );
         print("Bar Code card pressed");
         break;
       case "Log Out":
@@ -71,13 +76,13 @@ class MainMenuScreen extends StatelessWidget {
       image: "assets/menu/photo-gallery-3.png",
       description: "Click picture",
     ),CardData(
-      title: "QR Code",
-      image: "assets/menu/qr-code-img.png",
-      description: "Scan QR Code",
+      title: "QR/Bar Code",
+      image: "assets/menu/scanner.png",
+      description: "Scan and Upload",
     ),CardData(
-      title: "Bar Code",
-      image: "assets/menu/barcode-img-3.png",
-      description: "Scan Bar Code",
+      title: "Quick Note",
+      image: "assets/menu/notes.png",
+      description: "Upload Notes",
     ),CardData(
       title: "Log Out",
       image: "assets/menu/logout.png",
@@ -93,9 +98,9 @@ class MainMenuScreen extends StatelessWidget {
         body: Container(
         decoration: const BoxDecoration(
         gradient: LinearGradient(
-        begin: Alignment.centerLeft,
+        begin: Alignment.center,
         end: Alignment.bottomLeft,
-        colors: [Colors.white,Colors.indigo,
+        colors: [Colors.white,
             Color(0xFF00008B)],
     ),
     ),
