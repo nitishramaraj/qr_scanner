@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "772702001257",
+    "firebase_url": "https://nitish-396208-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nitish-396208",
+    "storage_bucket": "nitish-396208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772702001257:android:a1c48e24e3b3816402aaf8",
+        "android_client_info": {
+          "package_name": "com.example.qr_scanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-sO47dHp2peq82amq0rxbgMAQ9qpm_do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:qr_scanner/features/screens/login/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qr_scanner/features/screens/scanner/scanner.dart';
 import 'package:qr_scanner/features/screens/notes/notes.dart';
+import 'package:qr_scanner/features/screens/photo/photo.dart';
 
 
 class MainMenuScreen extends StatelessWidget {
@@ -34,6 +34,10 @@ class MainMenuScreen extends StatelessWidget {
     switch (cardTitle) {
       case "Photo":
       // Handle Photo card press
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) =>  const Photo()),
+        );
         print("Photo card pressed");
         break;
       case "QR/Bar Code":
@@ -48,7 +52,7 @@ class MainMenuScreen extends StatelessWidget {
       // Handle Bar Code card press
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) =>  const Notes()),
+          MaterialPageRoute(builder: (context) =>  Notes()),
         );
         print("Bar Code card pressed");
         break;
@@ -97,12 +101,12 @@ class MainMenuScreen extends StatelessWidget {
       backgroundColor: Colors.white,
         body: Container(
         decoration: const BoxDecoration(
-        gradient: LinearGradient(
-        begin: Alignment.center,
-        end: Alignment.bottomLeft,
-        colors: [Colors.white,
-            Color(0xFF00008B)],
-    ),
+    //     gradient: LinearGradient(
+    //     begin: Alignment.center,
+    //     end: Alignment.bottomRight,
+    //     colors: [Colors.white,
+    //         Color(0xFF00008B)],
+    // ),
     ),
       child: SafeArea(
         child: Column(
